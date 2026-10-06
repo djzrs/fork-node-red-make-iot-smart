@@ -1,6 +1,6 @@
 # NPM 发布指南
 
-本指南将帮助您将 `node-red-make-iot-smart` 插件发布到 NPM 上。
+本指南将帮助您将 `node-red-iot-agent` 插件发布到 NPM 上。
 
 ## 前置条件
 
@@ -10,7 +10,7 @@
 - 验证登录状态：`npm whoami`
 
 ### 2. 权限确认
-- 确保您有发布 `@jimmyfreecoding/node-red-make-iot-smart` 包的权限
+- 确保您有发布 `@djzrs/node-red-iot-agent` 包的权限
 - 如果是第一次发布，确保包名未被占用
 
 ## 发布方式
@@ -101,7 +101,7 @@ npm publish --access public
 - [ ] .npmignore 文件正确配置
 
 ### 发布后验证
-- [ ] 在 NPM 网站确认包已发布：https://www.npmjs.com/package/@jimmyfreecoding/node-red-make-iot-smart
+- [ ] 在 NPM 网站确认包已发布：https://www.npmjs.com/package/@djzrs/node-red-iot-agent
 - [ ] 版本号正确
 - [ ] 包大小合理
 - [ ] 文件列表正确
@@ -112,7 +112,7 @@ npm publish --access public
 
 ```bash
 # 全局安装（在 Node-RED 用户目录）
-npm install @jimmyfreecoding/node-red-make-iot-smart
+npm install @djzrs/node-red-iot-agent
 
 # 或者在 Node-RED 管理界面中搜索 "make-iot-smart" 安装
 ```
@@ -155,7 +155,7 @@ npm WARN tarball tarball data for ... seems to be corrupted
 
 ## 相关链接
 
-- [NPM 包页面](https://www.npmjs.com/package/@jimmyfreecoding/node-red-make-iot-smart)
-- [GitHub 仓库](https://github.com/jimmyfreecoding/node-red-make-iot-smart)
+- [NPM 包页面](https://www.npmjs.com/package/@djzrs/node-red-iot-agent)
+- [GitHub 仓库](https://github.com/djzrs/fork-node-red-make-iot-smart)
 - [Node-RED 插件开发指南](https://nodered.org/docs/creating-nodes/)
 - [NPM 发布文档](https://docs.npmjs.com/cli/v8/commands/npm-publish)

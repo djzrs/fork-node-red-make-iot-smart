@@ -1,5 +1,5 @@
 {
-    "name": "@djzrs/node-red-iot-ai-smart",
+    "name": "@djzrs/node-red-iot-agent",
     "version": "0.1.5",
     "description": "AI tools for Node-RED — LLM agent for IoT with custom OpenAI-compatible providers",
     "author": {

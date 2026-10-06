@@ -57,14 +57,14 @@ Node-RED Make IoT Smart es un agente de IA integral diseñado específicamente p
 ### Instalar desde npm
 
 ```bash
-npm install @jhe.zheng/node-red-make-iot-smart
+npm install @djzrs/node-red-iot-agent
 ```
 
 ### Instalar desde el Gestor de Paleta de Node-RED
 
 1. Abra el editor de Node-RED.
 2. Vaya a **Menú → Gestionar paleta**.
-3. Busque `@jhe.zheng/node-red-make-iot-smart`.
+3. Busque `@djzrs/node-red-iot-agent`.
 4. Haga clic en **Instalar**.
 5. Reinicie Node-RED después de la instalación.
 6. Después de la instalación, verá una nueva pestaña **Asistente de IA** en la barra lateral de Node-RED.

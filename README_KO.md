@@ -57,14 +57,14 @@ Node-RED Make IoT Smart는 Node-RED 개발 전용으로 설계된 포괄적인 A
 ### npm에서 설치
 
 ```bash
-npm install @jhe.zheng/node-red-make-iot-smart
+npm install @djzrs/node-red-iot-agent
 ```
 
 ### Node-RED 팔레트 매니저에서 설치
 
 1. Node-RED 에디터를 엽니다.
 2. **메뉴 → 팔레트 관리**로 이동합니다.
-3. `@jhe.zheng/node-red-make-iot-smart`를 검색합니다.
+3. `@djzrs/node-red-iot-agent`를 검색합니다.
 4. **설치**를 클릭합니다.
 5. 설치 후 Node-RED를 재시작합니다.
 6. 설치 후 Node-RED 사이드바에 새로운 **AI 어시스턴트** 탭이 나타납니다.
