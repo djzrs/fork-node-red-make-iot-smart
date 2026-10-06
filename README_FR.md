@@ -79,14 +79,14 @@ npm install @djzrs/node-red-iot-agent
 
 ## Démarrage Rapide
 ### Entrez "Analyser le nœud actuel"
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/current-node.gif" width="800" height="450" alt="Animation de démonstration" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/current-node.gif" width="800" height="450" alt="Animation de démonstration" />
 
 
 ### Entrez "Créer un flux d'exemple"
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/create-flow.gif" width="800" height="450" alt="Animation de démonstration" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/create-flow.gif" width="800" height="450" alt="Animation de démonstration" />
 
 ### Entrez "Vérification de santé"
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/health-check.gif" width="800" height="450" alt="Animation de démonstration" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/health-check.gif" width="800" height="450" alt="Animation de démonstration" />
 
 ## Configuration
 
@@ -295,9 +295,9 @@ Licencié sous la Licence MIT. Voir le fichier [LICENSE](LICENSE) pour les déta
 
 ## Support
 Le développement IA est plus un art qu'une technique, maîtriser les LLMs n'est pas une tâche simple et nécessite une compréhension approfondie des modèles IA, des données et des scénarios d'application. Chaque session de questions-réponses peut produire des résultats différents, les versions initiales ne sont souvent pas satisfaisantes, mais avec l'amélioration de l'ingénierie des prompts, cela satisfera progressivement les besoins quotidiens des utilisateurs Node-RED, qu'ils soient ingénieurs IT ou OT. Nous accueillons plus de personnes intéressées pour rejoindre le projet.
-- **Retour de Problèmes** : [GitHub Issues](https://github.com/jimmyfreecoding/node-red-make-iot-smart/issues)
-- **Documentation** : [Wiki](https://github.com/jimmyfreecoding/node-red-make-iot-smart/wiki)
-- **Discussion** : [GitHub Discussions](https://github.com/jimmyfreecoding/node-red-make-iot-smart/discussions)
+- **Retour de Problèmes** : [GitHub Issues](https://github.com/djzrs/fork-node-red-make-iot-smart/issues)
+- **Documentation** : [Wiki](https://github.com/djzrs/fork-node-red-make-iot-smart/wiki)
+- **Discussion** : [GitHub Discussions](https://github.com/djzrs/fork-node-red-make-iot-smart/discussions)
 
 ## Auteur
 

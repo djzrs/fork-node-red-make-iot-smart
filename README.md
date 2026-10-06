@@ -78,14 +78,14 @@ npm install @djzrs/node-red-iot-agent
 11. Start interacting with your AI assistant!
 ## Quick Start
 ### Type "Analyze current node"
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/current-node.gif" width="800" height="450" alt="Demo Animation" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/current-node.gif" width="800" height="450" alt="Demo Animation" />
 
 
 ### Type "Create a sample flow"
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/create-flow.gif" width="800" height="450" alt="Demo Animation" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/create-flow.gif" width="800" height="450" alt="Demo Animation" />
 
 ### Type "Health check"
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/health-check.gif" width="800" height="450" alt="Demo Animation" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/health-check.gif" width="800" height="450" alt="Demo Animation" />
 
 ## Configuration
 
@@ -295,9 +295,9 @@ Licensed under the MIT License. See [LICENSE](LICENSE) file for details.
 
 ## Support
 AI development is more like art than technology. Mastering LLMs is not a simple task and requires deep understanding of AI models, data, and application scenarios. Each Q&A session may yield different results. Initial versions are often imperfect, but with the improvement of prompt engineering, they will gradually truly meet the daily needs of Node-RED users, whether IT or OT engineers. We welcome more interested people to join the project.
-- **Issue Reports**: [GitHub Issues](https://github.com/jimmyfreecoding/node-red-make-iot-smart/issues)
-- **Documentation**: [Wiki](https://github.com/jimmyfreecoding/node-red-make-iot-smart/wiki)
-- **Discussions**: [GitHub Discussions](https://github.com/jimmyfreecoding/node-red-make-iot-smart/discussions)
+- **Issue Reports**: [GitHub Issues](https://github.com/djzrs/fork-node-red-make-iot-smart/issues)
+- **Documentation**: [Wiki](https://github.com/djzrs/fork-node-red-make-iot-smart/wiki)
+- **Discussions**: [GitHub Discussions](https://github.com/djzrs/fork-node-red-make-iot-smart/discussions)
 
 ## Author
 

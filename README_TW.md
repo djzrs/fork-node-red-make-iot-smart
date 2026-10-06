@@ -79,14 +79,14 @@ npm install @djzrs/node-red-iot-agent
 
 ## 快速開始
 ### 輸入「分析當前節點」
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/current-node.gif" width="800" height="450" alt="演示動畫" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/current-node.gif" width="800" height="450" alt="演示動畫" />
 
 
 ### 輸入「創建示例流程」
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/create-flow.gif" width="800" height="450" alt="演示動畫" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/create-flow.gif" width="800" height="450" alt="演示動畫" />
 
 ### 輸入「健康檢查」
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/health-check.gif" width="800" height="450" alt="演示動畫" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/health-check.gif" width="800" height="450" alt="演示動畫" />
 
 ## 配置
 
@@ -295,9 +295,9 @@ npm install @djzrs/node-red-iot-agent
 
 ## 支持
 AI 開發更像是一門藝術而非技術，掌握 LLM 並非易事，需要對 AI 模型、數據和應用場景有深入理解。每次問答會話可能產生不同結果，早期版本往往不盡人意，但通過提示詞工程的改進，將逐步滿足 Node-RED 用戶的日常需求，無論是 IT 還是 OT 工程師。我們歡迎更多有興趣的人加入項目。
-- **問題回報**：[GitHub Issues](https://github.com/jimmyfreecoding/node-red-make-iot-smart/issues)
-- **文檔**：[Wiki](https://github.com/jimmyfreecoding/node-red-make-iot-smart/wiki)
-- **討論**：[GitHub Discussions](https://github.com/jimmyfreecoding/node-red-make-iot-smart/discussions)
+- **問題回報**：[GitHub Issues](https://github.com/djzrs/fork-node-red-make-iot-smart/issues)
+- **文檔**：[Wiki](https://github.com/djzrs/fork-node-red-make-iot-smart/wiki)
+- **討論**：[GitHub Discussions](https://github.com/djzrs/fork-node-red-make-iot-smart/discussions)
 
 ## 作者
 

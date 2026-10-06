@@ -79,14 +79,14 @@ npm install @djzrs/node-red-iot-agent
 
 ## クイックスタート
 ### 「現在のノードを分析」と入力
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/current-node.gif" width="800" height="450" alt="デモアニメーション" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/current-node.gif" width="800" height="450" alt="デモアニメーション" />
 
 
 ### 「サンプルフローを作成」と入力
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/create-flow.gif" width="800" height="450" alt="デモアニメーション" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/create-flow.gif" width="800" height="450" alt="デモアニメーション" />
 
 ### 「ヘルスチェック」と入力
-<img src="https://github.com/jimmyfreecoding/node-red-make-iot-smart/raw/main/public/health-check.gif" width="800" height="450" alt="デモアニメーション" />
+<img src="https://github.com/djzrs/fork-node-red-make-iot-smart/raw/main/public/health-check.gif" width="800" height="450" alt="デモアニメーション" />
 
 ## 設定
 
@@ -295,9 +295,9 @@ MITライセンスの下でライセンスされています。詳細につい�
 
 ## サポート
 AI開発は技術というより芸術であり、LLMをマスターすることは簡単なタスクではなく、AIモデル、データ、アプリケーションシナリオの深い理解が必要です。各Q&Aセッションは異なる結果を生成する可能性があり、初期バージョンは多くの場合満足のいくものではありませんが、プロンプトエンジニアリングの改善により、ITエンジニアであろうとOTエンジニアであろうと、Node-REDユーザーの日常ニーズを徐々に満たすようになります。より多くの興味のある人々がプロジェクトに参加することを歓迎します。
-- **問題報告**：[GitHub Issues](https://github.com/jimmyfreecoding/node-red-make-iot-smart/issues)
-- **ドキュメント**：[Wiki](https://github.com/jimmyfreecoding/node-red-make-iot-smart/wiki)
-- **ディスカッション**：[GitHub Discussions](https://github.com/jimmyfreecoding/node-red-make-iot-smart/discussions)
+- **問題報告**：[GitHub Issues](https://github.com/djzrs/fork-node-red-make-iot-smart/issues)
+- **ドキュメント**：[Wiki](https://github.com/djzrs/fork-node-red-make-iot-smart/wiki)
+- **ディスカッション**：[GitHub Discussions](https://github.com/djzrs/fork-node-red-make-iot-smart/discussions)
 
 ## 作者
 
