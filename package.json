@@ -1,10 +1,16 @@
 {
-    "name": "@jhe.zheng/node-red-make-iot-smart",
+    "name": "@djzrs/node-red-iot-ai-smart",
     "version": "0.1.5",
-    "description": "A AI tools for Node-RED",
+    "description": "AI tools for Node-RED — LLM agent for IoT with custom OpenAI-compatible providers",
     "author": {
         "name": "Zheng He"
     },
+    "contributors": [
+        {
+            "name": "djzrs",
+            "url": "https://github.com/djzrs"
+        }
+    ],
     "license": "MIT",
     "keywords": [
         "node-red",
@@ -19,12 +25,12 @@
         "smart"
     ],
     "bugs": {
-        "url": "https://github.com/jimmyfreecoding/node-red-make-iot-smart/issues"
+        "url": "https://github.com/djzrs/fork-node-red-make-iot-smart/issues"
     },
-    "homepage": "https://github.com/jimmyfreecoding/node-red-make-iot-smart#readme",
+    "homepage": "https://github.com/djzrs/fork-node-red-make-iot-smart#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jimmyfreecoding/node-red-make-iot-smart.git"
+        "url": "https://github.com/djzrs/fork-node-red-make-iot-smart.git"
     },
     "publishConfig": {
         "access": "public"
