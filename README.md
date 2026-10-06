@@ -209,6 +209,7 @@ Each scenario is configured with specialized system prompts to ensure the AI ass
 | Anthropic | Claude-3, Claude-3.5                    | Advanced reasoning, safety-focused |
 | Google    | Gemini Pro, Gemini Flash                | Multimodal, high performance |
 | DeepSeek  | deepseek-chat, deepseek-coder           | Cost-effective, coding-focused |
+| OpenAI Compatible / Custom | Any model name you type | Point `API Base URL` at any OpenAI-compatible endpoint: proxies, Ollama, vLLM, LM Studio, SiliconFlow, etc. |
 | Others    | All LLM providers supported by LangChain.js | Highly extensible, flexible configuration |
 
 ## API Configuration

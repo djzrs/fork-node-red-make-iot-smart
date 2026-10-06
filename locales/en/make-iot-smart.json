@@ -35,7 +35,9 @@
             "apiKey": "API Key",
             "model": "Model",
             "useDifferentModels": "Use Different Models",
-            "maxTokens": "Max Tokens"
+            "maxTokens": "Max Tokens",
+            "customModel": "Custom model name",
+            "baseUrl": "API Base URL"
         },
         "placeholder": {
             "name": "Enter configuration name",
@@ -52,7 +54,8 @@
                 "cacheReadPrice": "Cache read price",
                 "outputPrice": "Output price"
             },
-            "differentModels": "Use different models for planning and execution phases."
+            "differentModels": "Use different models for planning and execution phases.",
+            "baseUrl": "Custom API base URL pointing to any OpenAI-compatible gateway (proxy, Ollama, vLLM, LM Studio, SiliconFlow, etc.). Local models may use a placeholder key."
         },
         "validation": {
             "apiKeyFiltered": "Invalid characters removed from API key. Only ASCII characters are allowed."

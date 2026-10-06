@@ -209,6 +209,7 @@ npm install @jhe.zheng/node-red-make-iot-smart
 | Anthropic | Claude-3, Claude-3.5                    | 高级推理，注重安全 |
 | Google    | Gemini Pro, Gemini Flash                | 多模态，高性能     |
 | DeepSeek  | deepseek-chat, deepseek-coder           | 经济高效，专注编码 |
+| OpenAI 兼容 / 自定义 | 任意自定义模型名 | 在「API基地址」填入任意 OpenAI 兼容端点：中转、Ollama、vLLM、LM Studio、硅基流动等 |
 | 其他      | 通过LangChain.js支持的所有LLM提供商     | 扩展性强，灵活配置 |
 
 ## API配置

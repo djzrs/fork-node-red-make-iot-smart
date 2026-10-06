@@ -47,6 +47,7 @@ module.exports = function (RED) {
         node.executionModel = config.executionModel;
         node.temperature = parseFloat(config.temperature) || 0.1;
         node.maxTokens = parseInt(config.maxTokens) || 2000;
+        node.baseUrl = config.baseUrl || '';
         
         // MCP configuration - using node-red-mcp-server
         node.mcpCommand = config.mcpCommand || 'npx node-red-mcp-server';
@@ -228,6 +229,7 @@ module.exports = function (RED) {
                 provider: node.provider,
                 model: node.model,
                 apiKey: node.apiKey,
+                baseUrl: node.baseUrl,
                 temperature: node.temperature,
                 maxTokens: node.maxTokens,
                 streaming: true
@@ -1394,6 +1396,10 @@ module.exports = function (RED) {
                             { value: 'gemini-1.5-flash', label: 'Gemini 1.5 Flash' },
                             { value: 'gemini-1.0-pro', label: 'Gemini 1.0 Pro' }
                         ]
+                    },
+                    'openai-compatible': {
+                        name: 'OpenAI 兼容 / 自定义',
+                        models: []
                     }
                 };
 

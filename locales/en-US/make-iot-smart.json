@@ -54,7 +54,9 @@
             "apiKey": "API Key",
             "model": "Model",
             "maxTokens": "Max Tokens",
-            "useDifferentModels": "Use different models for Plan and Act modes"
+            "useDifferentModels": "Use different models for Plan and Act modes",
+            "customModel": "Custom model name",
+            "baseUrl": "API Base URL"
         },
         "placeholder": {
             "name": "Name",
@@ -63,6 +65,7 @@
         "tips": {
             "apiKey": "This key is stored locally and is only used to make API requests from this extension.",
             "differentModels": "Switching between Plan and Act modes will preserve the API and model used in the previous mode. This can be helpful when using a powerful reasoning model to make plans and then using a cheaper coding model to execute.",
+            "baseUrl": "Custom API base URL pointing to any OpenAI-compatible gateway (proxy, Ollama, vLLM, LM Studio, SiliconFlow, etc.). Local models may use a placeholder key.",
             "capabilities": {
                 "noImage": "No image support",
                 "noBrowser": "No browser usage support",

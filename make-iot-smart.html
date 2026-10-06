@@ -115,6 +115,7 @@ SOFTWARE.
             <option value="deepseek">DeepSeek</option>
             <option value="anthropic">Anthropic</option>
             <option value="google">Google</option>
+            <option value="openai-compatible">OpenAI 兼容 / 自定义</option>
         </select>
     </div>
     <div class="form-row">
@@ -124,11 +125,22 @@ SOFTWARE.
             <p data-i18n="api-config.tips.apiKey"></p>
         </div>
     </div>
-    <div class="form-row">
+    <div class="form-row" id="main-model-row">
         <label for="node-config-input-model"><i class="fa fa-brain"></i> <span data-i18n="api-config.label.model"></span></label>
         <select id="node-config-input-model">
             <!-- 动态填充 -->
         </select>
+    </div>
+    <div class="form-row" id="custom-model-row" style="display: none;">
+        <label for="node-config-input-customModel"><i class="fa fa-brain"></i> <span data-i18n="api-config.label.customModel"></span></label>
+        <input type="text" id="node-config-input-customModel" placeholder="任意 OpenAI 兼容模型名，如 gpt-4o / qwen-plus / llama3">
+    </div>
+    <div class="form-row" id="baseurl-row" style="display: none;">
+        <label for="node-config-input-baseUrl"><i class="fa fa-link"></i> <span data-i18n="api-config.label.baseUrl"></span></label>
+        <input type="text" id="node-config-input-baseUrl" placeholder="如 https://api.openai.com/v1 或本地网关 http://127.0.0.1:11434/v1">
+        <div class="form-tips">
+            <p data-i18n="api-config.tips.baseUrl"></p>
+        </div>
     </div>
     <div class="form-row" id="model-capabilities" style="display: none;">
         <div class="form-tips">
@@ -171,6 +183,8 @@ SOFTWARE.
             executionModel: { value: "" },
             temperature: { value: 0.1, validate: RED.validators.number() },
             maxTokens: { value: 2000, validate: RED.validators.number() },
+            baseUrl: { value: "" },
+            customModel: { value: "" }
 
         },
         credentials: {
@@ -240,6 +254,10 @@ SOFTWARE.
                                 { value: 'gemini-1.5-flash', label: 'Gemini 1.5 Flash' },
                                 { value: 'gemini-1.0-pro', label: 'Gemini 1.0 Pro' }
                             ]
+                        },
+                        'openai-compatible': {
+                            name: 'OpenAI 兼容 / 自定义',
+                            models: []
                         }
                     };
                     updateProviderOptions();
@@ -299,13 +317,29 @@ SOFTWARE.
                 }
             }
             
-            // 提供商变化时更新模型选项
+            // 提供商变化时更新模型选项与自定义字段显隐
             $('#node-config-input-provider').change(function() {
                 const provider = $(this).val();
                 updateModelOptions($('#node-config-input-model'), provider);
                 updateModelOptions($('#node-config-input-planningModel'), provider);
                 updateModelOptions($('#node-config-input-executionModel'), provider);
+                const isCustom = provider === 'openai-compatible';
+                $('#custom-model-row').toggle(isCustom);
+                $('#baseurl-row').toggle(isCustom);
+                $('#main-model-row').toggle(!isCustom);
+                if (isCustom) {
+                    $('#node-config-input-customModel').val(node.customModel || '');
+                    $('#node-config-input-baseUrl').val(node.baseUrl || '');
+                }
             });
+
+            // 初始显隐（编辑已有节点时）
+            (function() {
+                const isCustom = (node.provider === 'openai-compatible');
+                $('#custom-model-row').toggle(isCustom);
+                $('#baseurl-row').toggle(isCustom);
+                $('#main-model-row').toggle(!isCustom);
+            })();
             
             // 切换不同模型配置
             $('#node-config-input-useDifferentModels').change(function() {
@@ -344,6 +378,12 @@ SOFTWARE.
                     }
                 }
             });
+        },
+        oneditsave: function() {
+            // OpenAI 兼容模式下，用自定义模型名覆盖下拉选择的值
+            if (this.provider === 'openai-compatible') {
+                this.model = $('#node-config-input-customModel').val() || this.customModel || '';
+            }
         }
     });
 </script>
