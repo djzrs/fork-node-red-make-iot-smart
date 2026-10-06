@@ -1,0 +1,68 @@
+# Packages the Node-RED node into offline installers and attaches them to the
+# GitHub Release (or uploads them as workflow artifacts on manual dispatch).
+#
+# Two artifacts are produced:
+#   1) <scope>-<name>-<version>.tgz  -- standard npm tarball (lightweight,
+#      install with `npm install ./file.tgz`; still needs network for deps)
+#   2) offline-install-<version>-linux-x64.zip -- full bundle including
+#      node_modules (truly offline, but native modules are built for
+#      linux-x64, so use it on a matching Linux x64 host)
+#
+# Triggers: creating a GitHub Release, or a manual workflow_dispatch.
+
+name: Package offline installer
+
+on:
+  release:
+    types: [created]
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # required to upload release assets
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies (includes native builds)
+        run: npm install --legacy-peer-deps
+
+      - name: Create standard npm tarball
+        run: npm pack
+
+      - name: Build full offline bundle (with node_modules)
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          zip -r "offline-install-${VERSION}-linux-x64.zip" . \
+            -x '.git/*' -x '.git' -x 'node_modules/.cache/*'
+
+      - name: Upload to Release assets
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ github.event.release.tag_name }}"
+          for f in *.tgz offline-install-*.zip; do
+            if [ -e "$f" ]; then
+              echo "Uploading $f"
+              gh release upload "$TAG" "$f" --clobber
+            fi
+          done
+
+      - name: Upload as workflow artifacts
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: offline-installer
+          path: |
+            *.tgz
+            offline-install-*.zip
+          retention-days: 30
